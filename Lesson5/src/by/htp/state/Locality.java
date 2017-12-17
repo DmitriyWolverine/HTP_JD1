@@ -96,6 +96,4 @@ public class Locality {
 		}
 		return resultInSum;
 	}
-
-
 }
