@@ -4,9 +4,7 @@ public class City {
 	private String name;
 	private int popualtion;
 	private boolean isCapital;
-	
 	private static int cityCounter = 1 ;
-	
 	
 	public City() {
 		name = "SinCity"+cityCounter;
@@ -47,5 +45,4 @@ public class City {
 	public void setCapital(boolean isCapital) {
 		this.isCapital = isCapital;
 	}
-
 }
