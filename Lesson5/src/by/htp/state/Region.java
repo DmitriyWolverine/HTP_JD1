@@ -15,9 +15,6 @@ public class Region {
 		}
 		name = getBiggestCityInRegion().getName() + " region";
 		populationInRegion = countPopualtionInRegion();
-		
-		
-		
 	}
 
 	public Region(int numberOfLocalities) {
@@ -65,7 +62,6 @@ public class Region {
 		this.localities = localities;
 	}
 	
-	
 	public double getSquareOfRegion() {
 		return squareOfRegion;
 	}
@@ -95,5 +91,4 @@ public class Region {
 		}
 		return resultInSum;
 	}
-	
 }
