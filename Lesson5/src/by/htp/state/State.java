@@ -29,7 +29,6 @@ public class State {
 		capital.setCapital(true);
 	}
 	
-	
 	public State(String name) {
 		super();
 		this.name = name;
@@ -52,7 +51,6 @@ public class State {
 		counter++;
 	}
 
-	
 	public State(City capital, String name) {
 		super();
 		capital.setPopualtion(capital.getPopualtion()*10);
@@ -70,7 +68,6 @@ public class State {
 		}
 		counter++;
 	}
-
 
 	public State(int totatlPopulation, City capital, String name, Region[] regions) {
 		this.totalPopulation = totatlPopulation;
@@ -95,7 +92,6 @@ public class State {
 		return builder.toString();
 	}
 
-
 	@Override
 	public String toString() {
 		String result = "Welcom to "+ name + "!!!\n" +"The capital is : "+ capital.getName() +
@@ -103,7 +99,6 @@ public class State {
 				"Total population is: "+ totalPopulation +" in "+ regions.length+" regions!\n"+
 				"Total square is : "+ totalSquare+" aquare kilometres\n"+
 				"Main cities in regions are: "+ regionCentresToString();
-			
 		return result;
 	}
 }
