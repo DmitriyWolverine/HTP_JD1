@@ -1,7 +1,7 @@
 package MyArrayList;
 
 public class MyArrayList<T> {
-	//Task: implement your own realization of arrayList, improve it functionality!
+	//Task: implement your own realization of arrayList
 	private int dimension;
 	private Object[] array;
 	
@@ -19,7 +19,6 @@ public class MyArrayList<T> {
 		dimension = arrayList.getDimension();
 		array = arrayList.getArray();
 	}
-	
 	
 	public int getDimension () {
 		return dimension;
@@ -123,8 +122,7 @@ public class MyArrayList<T> {
 	public MyArrayList<T> removeAll (Object entity){
 		int newSize = 0;
 		for(int i = 0 ; i < dimension ;  ) {
-			if( array[i].equals(entity))
-			{
+			if( array[i].equals(entity)){
 				i++;
 			}
 			else {
@@ -173,7 +171,6 @@ public class MyArrayList<T> {
 		for(int i = 0 ; i < dimension; ++i) {
 			array[i] = null;
 		}
-		
 	}
 		
 	private void copyPartOfArrayToSecondArrayBeforePos(Object [] firstArr, Object[] secondArr, int startInd, int secondInd) {
@@ -185,24 +182,22 @@ public class MyArrayList<T> {
 			secondArr[i] = firstArr[i];
 		}
 	}
+	
 	private void copyPartOfArrayToSecondArrayAfterPos(Object [] firstArr, Object[] secondArr, int startInd, int secondInd) {
 		if( (startInd >= secondInd ) || ( startInd < 0 ) || (secondInd < 0) ) {
 			return ;
 		}
-	
 		if( firstArr.length < secondArr.length) {
 			for( int i = startInd ; i < secondInd ; i++) {
 				secondArr[i] = firstArr[i-1];
 			}
 		}
-		
 		if( firstArr.length > secondArr.length) {
 			for( int i = startInd ; i < secondInd  ; i++) {
 				secondArr[i] = firstArr[i+1];
 			}
 		}
 	}
-	
 	
 	public void printArray() {
 		for( int i = 0 ; i < dimension ; ++i) {
