@@ -5,7 +5,6 @@ public class Solution {
 	public static void main(String[] args) {
 		//1 Create class library, contains array filled with books
 		Library lb = new Library(10);
-
 		lb.printBooks();
 		//2 Implement method "add book
 		lb.addBook(new Book(1867,"The War and peace","L.N.Tolstoy",1500));
@@ -61,5 +60,4 @@ public class Solution {
 		}
 		System.out.println("");
 	}
-
 }
